@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+span{
+    font-size: .9 rem;
+    color: #757573;
+}
+h6{
+    font-size: 1.1rem;
+    color:rgb(24,24,49);
+}
+/* navigation */
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding: 1vw 8vw;
+    align-items:center;
+    box-shadow: 2px 2px 10px rgba(0,0, 0, 0.15);
+}
+nav img{
+    width: 150px;
+    cursor:pointer;
+}
+nav .navigation ul{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+nav .navigation ul  li{
+list-style :none;
+margin-left: 30px;
+}
+nav .navigation ul  li  a{
+    text-decoration: none;
+    color: rgb(21,21,100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3 ease-in;
+    }
+nav .navigation ul  li  a:hover{
+        color: #FDC93B;
+
+
+    
+}
+#home{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,47,0.7)),url("b.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    backcground-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    padding-top:40px ;
+}
+#home h2{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+#home p{
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+#home .btn{
+    margin-top: 30px;
+}
+#home a{
+    text-decoration: none;
+    background-color: #fff;
+    padding: 13px 35px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+#home a.blue{
+    color: #fff;
+    background: rgb(21,21,100);
+} 
+#home a.blue:hover{
+    color:rgb(21,21,100);
+    background: #fff
+}  
+#home a.yellow{
+    color: #FDC93B;
+    background: rgb(21,21,100);
+} 
+#home a.yellow:hover{
+    color:rgb(21,21,100);
+    background:#fff
+} 
+#feature{
+    padding: 5vw 8vw  0 8vw;
+    text-align: center;
+}
+#feature .fea-base{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-gap:1rem;
+    margin-top:50px
+}
+#feature .fea-box{
+    background:#F9F9FF;
+    text-align: start;
+
+}
+#feature .fea-box i{
+    font-size: 2.3rem;
+    color: rgb(44,44,80);
+
+}
+#feature .fea-boxh h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46,46, 59);
+    padding: 13px 0 7px 0;  
+
+}
+#feature .fea-boxh p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70,70, 87);
+     
+
+}
+#course{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+#course  .course-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-gap:1rem;
+    margin-top:50px
+
+}
+#course .courses{
+    text-align: start;
+    height: 100%;
+    background:#F9F9FF;
+    position: relative;
+}
+#course .courses img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+#course .courses .details{
+    padding: 15px 15px 0 15px;
+}
+#course .courses i{
+    font-size: .9rem;
+    color:#FDC93B ;
+}
+#course .courses .cost{
+  background-color: rgb(74,74, 136);
+  color: #fff;
+  line-height: 70px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  position: absoulte;
+  right:15px;
+  bottom:100px;
+}
+#Registration{
+    padding: 6vw 8vw 6vw 8vw;
+    background:linear-gradient(rgba(99,112,168,0.5),rgba(81,91,235,0.5)),url("signup.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+#Registration .remainder{
+    color: #fff;
+}
+#Registration h1{
+    color: #fff;
+}
+#Registration .remainder .time{
+    display:flex;
+    margin-top: 40px;
+}
+#Registration .remainder .time .date{
+    text-align: center;
+    padding:13px 33px;
+    background:rgba(255,255,255,0.5);
+    backdrop-filter:blur(4px);
+    box-shadow: 0 8px  32px 0 rgba(31,38,135,0.37);
+    border-radius: 10px;
+    margin:0  5px 10px 5px;
+    border: 1px solid rgba(255,255,255,0.18);
+    font-size: 1.1rem;
+}
+#Registration .form{
+    background:#fff;
+    border-radius: 8px;
+    display:flex;
+    flex-direction:column;
+    padding: 40px;
+    box-shadow: 0 8px  32px 0 rgba(31,38,135,0.37);
+}
+#Registration .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(84,40,241);
+    outline:none;
+}
+#Registration .form .btn{
+    margin-top: 20px;
+}
+
+#Registration .form a.yellow{
+    color:#fff;
+    background:#FDC93B;
+    transition: 0.3 ease;
+} 
+#Registration .form a.yellow:hover{
+    color:rgb(21,21,100);
+    background:#fff
+} 
+#Registration .form a{
+    text-decoration: none;
+    background-color: #fff;
+    padding: 13px 35px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
